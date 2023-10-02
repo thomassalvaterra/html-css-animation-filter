@@ -78,7 +78,7 @@
     }
 }
 
-.ex-12-button {
+.ex-12-button:hover .ex-12-top-white {
     animation: sinistra 1s linear;
 }
 
@@ -100,7 +100,59 @@
     }
 }
 
-.ex-13-button {
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: destra 1s linear;
+}
+
+@keyframes destra {
+    0% {
+        right: 0;
+    }
+    25% {
+        right: 25%;
+    }
+    50% {
+        right: 50%;
+    }
+    75% {
+        right: 75%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: completo 2s linear;
+}
+@keyframes completo {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
     animation: completo 2s linear;
 }
 @keyframes completo {
